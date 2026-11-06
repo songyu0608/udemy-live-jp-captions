@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy Live Japanese Caption Translator",
+  "version": "1.0.0",
+  "description": "Translate Udemy English captions into Japanese using Chrome's on-device Translator API.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.udemy.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
